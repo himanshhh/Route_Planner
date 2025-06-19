@@ -1,28 +1,27 @@
-# Public Transport Route Planner  
-*Himansh Arora | Student ID: D00233455*
+# 🚆 Public Transport Route Planner  
 
 ---
 
-## Project Overview
+## 📋 Project Overview
 
 This project is a Python-based route planning application utilizing Neo4j graph database technology to model and query the Indian Railways network. It provides users with functionalities such as loading train data into the graph database, exploring station statistics, and computing the shortest route between any two stations. The project demonstrates the power of graph databases for route optimization and network analysis in transport systems.
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 | Technology  | Purpose                                |
 |-------------|--------------------------------------|
-| Python      | Scripting, querying Neo4j             |
-| Neo4j       | Graph database for railway network    |
-| pandas      | Data manipulation                     |
-| argparse    | Command-line argument parsing         |
-| networkx    | Graph processing and visualization    |
-| Neo4j APOC  | Extended procedures for Neo4j queries |
+| 🐍 Python      | Scripting, querying Neo4j             |
+| 🗄️ Neo4j       | Graph database for railway network    |
+| 🐼 pandas      | Data manipulation                     |
+| ⚙️ argparse    | Command-line argument parsing         |
+| 📊 networkx    | Graph processing and visualization    |
+| 🔌 Neo4j APOC  | Extended procedures for Neo4j queries |
 
 ---
 
-## Dataset
+## 📂 Dataset
 
 - **Dataset:** `trains.csv` — Indian Railways train routes  
 - **Source:** [Kaggle - Indian Trains Dataset](https://www.kaggle.com/datasets/dnyaneshyeole/indian-trains?select=trains.csv)  
@@ -30,18 +29,18 @@ This project is a Python-based route planning application utilizing Neo4j graph 
 
   | Variable       | Description                         |
   |----------------|-----------------------------------|
-  | train_name     | Name or ID of the train            |
-  | train_number   | Unique train number                 |
-  | source        | Origin station                     |
-  | destination   | Final station                     |
-  | distance      | Distance covered (in km)           |
-  | total_time    | Duration of journey                 |
-  | departure     | Departure time                     |
-  | arrival       | Arrival time                       |
+  | 🚉 train_name     | Name or ID of the train            |
+  | 🔢 train_number   | Unique train number                 |
+  | 🚩 source        | Origin station                     |
+  | 🏁 destination   | Final station                     |
+  | 📏 distance      | Distance covered (in km)           |
+  | ⏳ total_time    | Duration of journey                 |
+  | 🕒 departure     | Departure time                     |
+  | 🕓 arrival       | Arrival time                       |
 
 ---
 
-## Files and Functionality
+## 📁 Files and Functionality
 
 - **`data_load.py`**  
   Loads train route data from the CSV file into the Neo4j graph database.
@@ -49,27 +48,27 @@ This project is a Python-based route planning application utilizing Neo4j graph 
 - **`statistics.py`**  
   Provides key statistics of the database, including the total number of stations and routes (nodes and relationships), top 5 busiest stations by outgoing routes, and visualizes these busiest stations.  
 
-  ![Statistics Output](stats.png)
+  ![📊 Statistics Output](stats.png)
 
 - **`planner.py`**  
   Implements the route planner functionality. Users specify origin and destination stations, and it calculates the shortest route using graph algorithms. The output is both printed in the command line and saved as an HTML file (`route_result.html`). The route is also visualized for better comprehension.
 
-  ![Route Visualization 1](route.png)  
-  ![Route Visualization 2](route2.png)
+  ![🗺️ Route Visualization 1](route.png)  
+  ![🗺️ Route Visualization 2](route2.png)
 
 ---
 
-## Command Line Outputs
+## 💻 Command Line Outputs
 
 - Output of running queries and scripts through the command line interface demonstrating dataset exploration, route planning, and Neo4j graph queries.
 
-  ![CLI Output](functionality.PNG)  
-  ![Neo4j Stations Graph](graph.PNG)  
-  ![Neo4j Route Query](graph2.PNG)
+  ![🖥️ CLI Output](functionality.PNG)  
+  ![🌐 Neo4j Stations Graph](graph.PNG)  
+  ![🛤️ Neo4j Route Query](graph2.PNG)
 
 ---
 
-## Requirements
+## ⚙️ Requirements
 
 - **Operating System:** Windows 10 / 11  
 - **Python Version:** 3.10+  
@@ -83,7 +82,7 @@ This project is a Python-based route planning application utilizing Neo4j graph 
 
 ---
 
-## How to Run
+## 🚀 How to Run
 
 1. **Setup Neo4j Database**  
    - Launch Neo4j Desktop  
